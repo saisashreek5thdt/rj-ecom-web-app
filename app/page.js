@@ -1,9 +1,15 @@
+import Footer from "./(Components)/Common/Footer";
+import Header from "./(Components)/Common/Header";
+import AboutUS from "./(Components)/Home/AboutUS";
+
 export default function Home() {
   return (
-    <>
-      <h1 className="text-emerald-500 font-normal text-5xl text-center">
-        RJ Ecommerce Website
-      </h1>
-    </>
+    <div className="bg-stone-950 text-white w-full min-h-screen">
+      <Header />
+      <main>
+        <AboutUS />
+      </main>
+      <Footer />
+    </div>
   );
 }
