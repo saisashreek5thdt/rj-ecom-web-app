@@ -6,8 +6,8 @@ import RecentProducts from "./(Components)/Home/RecentProducts";
 
 export default function Home() {
   return (
-    <div className="bg-stone-950 text-white w-full min-h-screen">
-      <Header />
+    <div className="bg-stone-950 text-white w-full min-h-screen overflow-x-hidden">
+      <Header/>
       <main>
         <GlobalBrand/>
         <RecentProducts/>
