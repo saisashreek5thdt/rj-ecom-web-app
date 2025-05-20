@@ -41,8 +41,8 @@ export default function Hero() {
           </div>
           <div className="relative z-10 w-full h-full flex items-end justify-center p-4">
             <div className="flex flex-col gap-3 text-white text-center">
-              <p className="font-medium text-lg uppercase leading-2 tracking-[1px] " >Causal Jacket</p>
-              <p className="font-bold text-5xl ">For Men</p>
+              {/* <p className="font-medium text-lg uppercase leading-2 tracking-[1px] " >Causal Jacket</p> */}
+              <p className="font-bold text-5xl text-[#b2996e]">For Men</p>
               <p className="">Discover</p>
             </div>
           </div>
@@ -61,8 +61,8 @@ export default function Hero() {
           </div>
           <div className="relative z-10 w-full h-full flex items-end justify-center p-4">
             <div className="flex flex-col gap-3 text-white text-center">
-              <p className="font-medium text-lg uppercase leading-2 tracking-[1px] " >Causal Jacket</p>
-              <p className="font-bold text-5xl ">For Women</p>
+              {/* <p className="font-medium text-lg uppercase leading-2 tracking-[1px] " >Causal Jacket</p> */}
+              <p className="font-bold text-5xl text-[#b2996e]">For Women</p>
               <p className="">Discover</p>
             </div>
           </div>
