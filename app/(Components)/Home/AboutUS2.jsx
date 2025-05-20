@@ -22,21 +22,21 @@ export default function AboutUS2() {
   const fabricTexture = "/section-bg.jpg";
 
   return (
-    <section className="w-full overflow-hidden">
-      <div className="flex flex-col md:flex-row min-h-[600px]">
+    <section className="w-full mt-20 overflow-hidden h-screen">
+      <div className="w-full flex flex-col md:flex-row min-h-[600px]">
         {/* Left image */}
-        <div className="w-full md:w-2/5 relative h-64 md:h-auto">
+        <div className="w-1/3 sm:w-1/2 lg:w-[30%] md:w-2/5 relative h-64 md:h-auto">
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-center w-[100%]"
             style={{
               backgroundImage: `url(${businessManImage})`,
-              backgroundPosition: "center 30%",
+              backgroundPosition: "center 20%",
             }}
           />
         </div>
 
         {/* Right side with background and overlay */}
-        <div className="w-full md:w-3/5 relative">
+        <div className="w-2/3 sm:w-1/2 lg:w-[70%] md:w-3/5 relative">
           {/* Fabric texture background */}
           <div
             className="absolute inset-0 bg-cover bg-center z-0 opacity-40"
@@ -46,20 +46,20 @@ export default function AboutUS2() {
           <div className="absolute inset-0 bg-opacity-50 z-10" />
 
           {/* Main content */}
-          <div className="relative z-20 p-8 md:p-12 text-white h-full flex items-center">
-            <div className="grid grid-cols-1 md:grid-rows-2">
+          <div className="relative z-20  text-white w-full h-full flex items-center">
+            <div className="grid grid-cols-1 md:grid-rows-2 w-3/5 px-10">
               {/* Title */}
-              <div>
-                <p className="text-lg uppercase tracking-widest text-gray-3002">
+              <div className="flex flex-col justify-center items-start mb-4 gap-3">
+                <p className="text-lg pl-10 -pt-20 uppercase tracking-widest text-gray-3002">
                   COOL LOOK
                 </p>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+                <h2 className="px-10 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
                   We comprehend your style needs and create{" "}
                   <span className="text-[#b2996e]">wonderful clothing</span>
                 </h2>
               </div>
               {/* Stats */}
-              <div className="grid grid-cols-2 md:grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 md:grid-cols-2  px-10 place-content-center ">
                 {[
                   { value: "49+", label: "Tailors" },
                   { value: "21M", label: "Reviews" },
@@ -68,39 +68,35 @@ export default function AboutUS2() {
                 ].map((stat, idx) => (
                   <div
                     key={idx}
-                    className="bg-transparent bg-opacity-50 p-2 flex flex-col items-center justify-center rounded"
+                    className={` p-10 flex flex-col items-center justify-center ${
+                      idx === 0 || idx === 3 ? "bg-black opacity-60" : ""}`}
                   >
-                    <p className="text-3xl text-[#b2996e] font-semibold mb-1">
+                    <p className=" text-[50px] text-[#b2996e] font-semibold mb-1">
                       {stat.value}
                     </p>
-                    <p className="uppercase text-xs tracking-widest text-gray-200">
+                    <p className="font-normal text-base uppercase leading-2 tracking-[3px] text-gray-200">
                       {stat.label}
                     </p>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-rows-2">
+            <div className="grid grid-cols-1 md:grid-rows-2 w-2/5 gap-5">
               {/* Floating card (description + CTA) */}
-              <div className="p-2 text-gray-200 rounded mb-4">
-                <p className="text-sm mb-2">
+              <div className="pt-16 text-gray-200">
+                <p className="text-base">
                   Nulla pellentesque dignissim enim sit amet venenatis urna.
-                </p>
-                <p className="text-sm mb-2">
                   Laoreet non curabitur gravida arcu ac tortor dignissim
-                  convallis aenean.
-                </p>
-                <p className="text-sm">
-                  Et netus et malesuada fames enim diam.
+                  convallis Et aenean.netus et malesuada fames enim diam.
                 </p>
               </div>
               {/* Button + avatars */}
-              <div className="flex items-center justify-around gap-10">
+              <div className="flex items-start flex-col gap-5">
                 <Button text={`Shop The Sales`} />
                 <img
                   src={avatarCircles}
                   alt="Client avatars"
-                  className="h-12 w-auto"
+                  className="h-20 w-auto"
                 />
               </div>
               <Image
@@ -108,10 +104,11 @@ export default function AboutUS2() {
                 alt="image"
                 width={460}
                 height={230}
-                className="object-cover"
+                className="object-cover mt-4 w-full h-full sm:h-96 mb-5"
               />
-            </div>
           </div>
+          </div>
+          
         </div>
       </div>
 
