@@ -14,6 +14,7 @@ import {
 
 import { AiOutlineCopyright } from "react-icons/ai";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   let currentYear = new Date().getFullYear();
@@ -27,7 +28,14 @@ export default function Footer() {
             {/* Brand Section */}
             <div className="flex flex-col gap-4 justify-start items-start">
               <h2 className="text-xl cursor-pointer">
-                <span className="font-semibold">rj</span>fashions
+                {/* <span className="font-semibold">rj</span>fashions */}
+                <Image
+                  src="/logo.jpg"
+                  alt="Logo"
+                  width={100}
+                  height={50}
+                  className="w-24 h-auto">
+                </Image>
               </h2>
               <h2 className="text-sm text-justify">
                 Quisque eleifend eu dolor a pulvinar. Vestibulum auctor dolor
@@ -47,7 +55,7 @@ export default function Footer() {
               <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">Shipping & Delivery</h4>
               <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">Return & Refunds</h4>
               <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">Gift Wrapping</h4>
-              <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">Follow Your Order</h4>
+              <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">Track Your Order</h4>
             </div>
 
             {/* Company */}
@@ -56,17 +64,17 @@ export default function Footer() {
               <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">About Us</h4>
               <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">Our Mission</h4>
               <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">Privacy Policy</h4>
-              <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">Affiliates and Creators</h4>
+              {/* <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">Affiliates and Creators</h4> */}
             </div>
 
             {/* Support */}
-            <div className="flex flex-col gap-4">
+            {/* <div className="flex flex-col gap-4">
               <h2 className="text-lg font-medium uppercase">Support</h2>
               <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">FAQs</h4>
               <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">Shipping & Returns</h4>
               <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">Tracking</h4>
               <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">Size Charts</h4>
-            </div>
+            </div> */}
 
             {/* Talk to Us */}
             <div className="flex flex-col gap-4">

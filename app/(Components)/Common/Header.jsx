@@ -11,6 +11,7 @@ import {
   FiChevronDown,
   FiChevronUp,
 } from "react-icons/fi";
+import Image from "next/image";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -73,7 +74,15 @@ export default function Header() {
         loaded ? "animate-slide-up" : ""
       }`}>
           <Link href="/" className="text-xl font-bold">
-            rj<span className="font-normal">fashions</span>
+            {/* rj<span className="font-normal">fashions</span> */}
+            <Image
+              src="/logo.jpg"
+              alt="Logo"
+              width={100}
+              height={50}
+              className="w-24 h-auto">
+            </Image>
+
           </Link>
         </div>
 
@@ -89,10 +98,10 @@ export default function Header() {
                   className="cursor-pointer hover:text-yellow-600 flex items-center gap-1"
                 >
                   {item.label}
-                  <FiChevronDown className="w-4 h-4" />
+                  {/* <FiChevronDown className="w-4 h-4" /> */}
                 </button>
-                {desktopDropdown[item.label] && (
-                  <div className="absolute top-full left-0 w-40 mt-2 p-2 rounded shadow border border-white/10 bg-black z-50 animate-slide-up">
+                {/* {desktopDropdown[item.label] && (
+                  <div className="absolute top-full  left-0 w-40 mt-2 p-2 rounded shadow border border-white/10 bg-black  animate-slide-up">
                     {item.dropdown.map((sub, i) => (
                       <Link
                         key={i}
@@ -103,7 +112,7 @@ export default function Header() {
                       </Link>
                     ))}
                   </div>
-                )}
+                )} */}
               </div>
             ) : (
               <Link

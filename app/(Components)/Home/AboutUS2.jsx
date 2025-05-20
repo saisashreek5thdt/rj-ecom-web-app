@@ -16,8 +16,8 @@ export default function AboutUS2() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const businessManImage = "/aboutIMG1.jpg";
-  const businessWomanImage = "/blog-10-768x461.webp";
+  const businessManImage = "/aboutIMG2.jpg";
+  const businessWomanImage = "/blog.jpg";
   const avatarCircles = "/rating-image-1a-300x113.webp";
   const fabricTexture = "/section-bg.jpg";
 
@@ -61,10 +61,10 @@ export default function AboutUS2() {
               {/* Stats */}
               <div className="grid grid-cols-2 md:grid-cols-2  px-10 place-content-center ">
                 {[
-                  { value: "49+", label: "Tailors" },
-                  { value: "21M", label: "Reviews" },
-                  { value: "56k", label: "Bookings" },
-                  { value: "774+", label: "Clients" },
+                  { value: "19+", label: "Tailors" },
+                  { value: "08k", label: "Reviews" },
+                  { value: "16k", label: "Bookings" },
+                  { value: "192+", label: "Clients" },
                 ].map((stat, idx) => (
                   <div
                     key={idx}
@@ -99,13 +99,19 @@ export default function AboutUS2() {
                   className="h-20 w-auto"
                 />
               </div>
-              <Image
-                src="/blog-10-300x180.webp"
+              <img
+                  src={businessWomanImage}
+                  alt="Client avatars"
+                  className="object-cover mt-4 w-full h-full sm:h-96 mb-5"
+                />
+              {/* <Image
+                src="/blog.jpg"
                 alt="image"
                 width={460}
                 height={230}
-                className="object-cover mt-4 w-full h-full sm:h-96 mb-5"
-              />
+                className=""
+              /> */}
+              {/* <div className="object-cover mt-4 w-full h-full sm:h-96 mb-5" style={{ backgroundImage: `url(${businessWomanImage})` }} ></div> */}
           </div>
           </div>
           

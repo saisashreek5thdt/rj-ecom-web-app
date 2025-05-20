@@ -8,7 +8,7 @@ export default function ReviewsAndRatings() {
             <div className="grid sm:grid-cols-1 md:grid-cols-[35%_65%] lg:grid-cols-[35%_65%] xl:grid-cols-[35%_65%] my-16">
                 <div className="flex flex-col justify-center items-start text-white pl-10 gap-3">
                     <h1 className="font-normal text-base uppercase leading-2 tracking-[3px]">Review & Ratings</h1>
-                    <p className="font-medium text-5xl flex flex-col gap-2 "><span>Positive</span> <span>Customers</span><span>Feedback </span></p>
+                    <p className="font-medium text-5xl flex flex-col gap-2 "> <span>Customers</span><span>Speak </span></p>
                     <p className="text-base mr-[140px]">Pretium lectus quam id leo in. In massa tempor nec feugiat nisl pretium fusce. Libero enim sed faucibus turpis in eu mi bibendum neque. Eget duis at tellus at urna.</p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10 ">
