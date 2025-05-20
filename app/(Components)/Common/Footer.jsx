@@ -81,7 +81,7 @@ export default function Footer() {
               <h2 className="text-lg font-medium uppercase">Talk To Us</h2>
               <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">
                 Got Questions? Call us <br />
-                <Link href="tel:+15127794568">+1(512) 779 - 4568</Link>
+                <Link href="tel:+15127794568">+1(512) 000 - 0000</Link>
               </h4>
               <h4 className="text-sm font-medium cursor-pointer hover:text-[#b2996e]">
                 <Link href="mailto:info@rjfashions.com">info@rjfashions.com</Link>
