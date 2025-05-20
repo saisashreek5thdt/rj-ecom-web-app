@@ -60,7 +60,7 @@ export default function RecentProducts() {
         {/* Cards Grid */}
         <div className="mt-14 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 sm:gap-5 md:gap-8 lg:gap-10 xl:gap-14 mb-14">
           {products.map((product) => (
-            <div key={product.id} className="relative group flex flex-col items-center justify-center w-full h-full border-[1px] border-black hover:border-[1px] hover:border-amber-400 ">
+            <div key={product.id} className="relative group flex flex-col items-center justify-center w-full h-full border-[1px] border-black hover:border-[1px] hover:border-[#b2996e]">
               <div className="bg-[#222222] p-10 overflow-hidden transition-all duration-300 ease-in-out">
                 <div className="relative w-[200px] h-[300px] sm:w-[200px] sm:h-[300px] md:w-[250px] md:h-[300px] lg:w-[280px] lg:h-[350px] xl:w-[300px] xl:h-[350px]"> {/* Set fixed height */}
                   {/* Primary Image */}

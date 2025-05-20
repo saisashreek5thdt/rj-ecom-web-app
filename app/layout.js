@@ -1,5 +1,6 @@
 import { Jost } from "next/font/google";
 import "./globals.css";
+import ClientLayout from "./ClientLayout";
 
 const jostSans = Jost({
   variable: "--font-jost",
@@ -14,10 +15,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${jostSans.variable} antialiased`}
-      >
-        {children}
+      <body className={`${jostSans.variable} antialiased select-none`}>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
