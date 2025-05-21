@@ -4,7 +4,9 @@ import AboutUS2 from "./(Components)/Home/AboutUS2";
 import CircularText from "./(Components)/Home/CircularText";
 import GlobalBrand from "./(Components)/Home/GlobalBrand";
 import Hero from "./(Components)/Home/Hero";
+import InstagramZoomIn from "./(Components)/Home/InstagramZoomIn";
 import RecentProducts from "./(Components)/Home/RecentProducts";
+import ReviewRating from "./(Components)/Home/ReviewRating";
 import ReviewsAndRatings from "./(Components)/Home/ReviewsAndRatings";
 import ShippingInfo from "./(Components)/Home/ShippingInfo";
 
@@ -18,8 +20,10 @@ export default function Home() {
         <GlobalBrand />
         <AboutUS2 />
         <RecentProducts />
-        <ReviewsAndRatings />
+        <ReviewRating/>
+        {/* <ReviewsAndRatings /> */}
         <ShippingInfo />
+        <InstagramZoomIn/>
       </main>
       <Footer />
     </div>

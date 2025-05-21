@@ -12,6 +12,7 @@ export default function ReviewsAndRatings() {
                     <p className="text-base mr-[140px]">Pretium lectus quam id leo in. In massa tempor nec feugiat nisl pretium fusce. Libero enim sed faucibus turpis in eu mi bibendum neque. Eget duis at tellus at urna.</p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10 ">
+                
                     <div className="bg-[#2b2624ca] flex flex-col justify-center items-start text-white gap-5 w-[330px] h-[330px] px-10 py-10">
                         <div className="flex gap-2">
                             <Image
@@ -93,8 +94,9 @@ export default function ReviewsAndRatings() {
                         </div>
                         <div className="w-full">
                             <p className="w-full">Lorem ipsum dolor sit amet cons adipisicing elit. Architecto dicta repudiandae impedit consequuntur Lorem ipsum dolor sit amet consectetur. </p>
-                          </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
