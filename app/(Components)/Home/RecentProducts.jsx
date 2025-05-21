@@ -8,42 +8,42 @@ export default function RecentProducts() {
     {
       id: 1,
       name: "Double Breasted Blazer",
-      price: "$8.00 - $580.00",
+      price: "Price on Request",
       primaryImage: "/recent1.jpg",
       secondaryImage: "/recent1hover.jpg", // Replace with actual hover image
     },
     {
       id: 2,
       name: "Retro Style Blazer",
-      price: "$8.00 - $335.00",
+      price: "Price on Request",
       primaryImage: "/recent2.jpg",
       secondaryImage: "/recent2hover.jpg",  // Replace with actual hover image
     },
     {
       id: 3,
       name: "Formal Suit Jacket",
-      price: "$10.00 - $600.00",
+      price: "Price on Request",
       primaryImage: "/recent3.jpg",
       secondaryImage: "/recent3hover.jpg", // Replace with actual hover image
     },
     {
       id: 4,
       name: "Casual Blazer",
-      price: "$5.00 - $450.00",
+      price: "Price on Request",
       primaryImage: "/recent1.jpg",
       secondaryImage: "/recent1hover.jpg", // Replace with actual hover image
     },
     {
       id: 5,
       name: "Tuxedo Jacket",
-      price: "$15.00 - $700.00",
+      price: "Price on Request",
       primaryImage: "/recent2.jpg",
       secondaryImage: "/recent2hover.jpg", // Replace with actual hover image
     },
     {
       id: 6,
       name: "Lapel Blazer",
-      price: "$7.00 - $550.00",
+      price: "Price on Request",
       primaryImage: "/recent3.jpg",
       secondaryImage: "/recent3hover.jpg", // Replace with actual hover image
     },
