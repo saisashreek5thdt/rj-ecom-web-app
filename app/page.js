@@ -22,7 +22,7 @@ export default function Home() {
         <RecentProducts />
         <ReviewRating/>
         {/* <ReviewsAndRatings /> */}
-        <ShippingInfo />
+        {/* <ShippingInfo /> */}
         <InstagramZoomIn/>
       </main>
       <Footer />
