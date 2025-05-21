@@ -1,6 +1,7 @@
 import Footer from "./(Components)/Common/Footer";
 import Header from "./(Components)/Common/Header";
 import AboutUS2 from "./(Components)/Home/AboutUS2";
+import CircularText from "./(Components)/Home/CircularText";
 import GlobalBrand from "./(Components)/Home/GlobalBrand";
 import Hero from "./(Components)/Home/Hero";
 import RecentProducts from "./(Components)/Home/RecentProducts";
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero/>
+        <CircularText />
         <GlobalBrand />
         <AboutUS2 />
         <RecentProducts />

@@ -5,12 +5,12 @@ import { globalData } from "@/lib/globalData";
 
 export default function GlobalBrand() {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full px-6 bg-black pt-10 text-white">
+    <div className="flex flex-col items-center pt-24 justify-center w-full h-full px-6 bg-black  text-white">
       {/* Section Title */}
       <div className="flex flex-col items-center justify-center gap-2 sm:gap-2 md:gap-3 lg:gap-4">
         <ImScissors className="w-6 h-6"/>
         <h1 className="mt-4 font-normal text-base uppercase leading-2 tracking-[3px]">Premium Brand</h1>
-        <p className="text-4xl text-center font-bold sm:text-xl md:text-4xl lg:text-5xl">Fashion & Design Studio</p>
+        <p className="text-4xl text-center font-medium sm:text-xl md:text-4xl lg:text-5xl">Fashion & Design Studio</p>
         
       </div>
 
@@ -43,7 +43,7 @@ export default function GlobalBrand() {
             {/* Content */}
             <div className="relative z-10 flex flex-col items-start gap-0 sm:gap-2 md:gap-5 lg:gap-7 xl:gap-10 mt-6">
               {item.icon}
-              <p className="text-3xl font-bold">{item.title}</p>
+              <p className="text-3xl font-medium">{item.title}</p>
               <h1 className="font-normal text-sm text-white/80">
                 {item.description}
               </h1>
