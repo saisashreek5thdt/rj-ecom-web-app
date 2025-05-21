@@ -10,6 +10,7 @@ import {
   FaSquareXTwitter,
   FaInstagram,
   FaPinterest,
+  FaYoutube,
 } from "react-icons/fa6";
 import { AiOutlineCopyright } from "react-icons/ai";
 import Link from "next/link";
@@ -33,7 +34,7 @@ export default function Footer() {
               <FaFacebookF className="w-5 h-5 cursor-pointer hover:text-[#b2996e]" />
               <FaSquareXTwitter className="w-5 h-5 cursor-pointer hover:text-[#b2996e]" />
               <FaInstagram className="w-5 h-5 cursor-pointer hover:text-[#b2996e]" />
-              <FaPinterest className="w-5 h-5 cursor-pointer hover:text-[#b2996e]" />
+              <FaYoutube className="w-5 h-5 cursor-pointer hover:text-[#b2996e]" />
             </div>
           </div>
 
