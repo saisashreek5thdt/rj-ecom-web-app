@@ -5,8 +5,8 @@ export default function Hero() {
   const hero2 = "/heroine.png";
   return (
     <>
-      <div className="w-full h-screen flex">
-        
+      <div className="w-full h-screen grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+
         {/* <div className="absolute z-10 flex flex-col-reverse gap-2 pl-5 ">
           <p>Instagram</p>
           <p>Facebook</p>
@@ -14,7 +14,7 @@ export default function Hero() {
           <p>Linkedin</p>
         </div> */}
 
- <div className="absolute z-10 flex flex-col gap-2 pl-5 bottom-0">
+        <div className="absolute z-10 flex flex-col gap-2 sm:pl-0 md:pl-3 lg:pl-5 xl:pl-5 bottom-0">
           <div className="flex flex-col items-center justify-end h-24">
             <p className="text-base font-medium rotate-270 transform origin-center">Instagram</p>
           </div>
@@ -29,7 +29,7 @@ export default function Hero() {
           </div>
         </div>
         {/* Left Side */}
-        <div className="w-1/2 relative">
+        <div className="relative">
           <div className="absolute z-0 w-full h-full">
             <Image
               src={hero1}
@@ -49,7 +49,7 @@ export default function Hero() {
         </div>
 
         {/* Right Side */}
-        <div className="w-1/2 relative">
+        <div className=" relative">
           <div className="absolute z-0 w-full h-full">
             <Image
               src={hero2}
@@ -68,11 +68,11 @@ export default function Hero() {
           </div>
         </div>
 
-         <div className="absolute z-10 flex flex-col items-end justify-center -ml-10 gap-2 w-full h-full">
-             <p>01</p>
-             <p>02</p>
-             <p>03</p>
-         </div>
+        <div className="absolute z-10 flex flex-col items-end justify-center -ml-8 gap-2 w-full h-full">
+          <p>01</p>
+          <p>02</p>
+          <p>03</p>
+        </div>
       </div>
     </>
   );
