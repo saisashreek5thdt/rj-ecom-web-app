@@ -7,7 +7,7 @@ import { CiLock } from "react-icons/ci";
 export default function ShippingInfo() {
   return (
     <>
-      <section className="max-w-7xl h-48 p-5 mx-auto grid grid-cols-1 md:grid-cols-4 justify-center items-center gap-4 md:gap-6">
+      <section className=" p-5 mx-auto grid sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 justify-center items-center gap-4 md:gap-6">
         <div className="flex gap-4 justify-center items-center">
           <h2 className="text-2xl">
             <HiOutlineTruck className="w-24 h-24 text-[#b2996e]" />
