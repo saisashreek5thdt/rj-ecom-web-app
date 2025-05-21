@@ -1,6 +1,7 @@
 import Footer from "./(Components)/Common/Footer";
 import Header from "./(Components)/Common/Header";
 import AboutUS2 from "./(Components)/Home/AboutUS2";
+import CircularText from "./(Components)/Home/CircularText";
 import GlobalBrand from "./(Components)/Home/GlobalBrand";
 import Hero from "./(Components)/Home/Hero";
 import InstagramZoomIn from "./(Components)/Home/InstagramZoomIn";
@@ -14,8 +15,9 @@ export default function Home() {
     <div className="bg-stone-950 text-white w-full min-h-screen overflow-x-hidden select-none">
       <Header />
       <main>
-          <Hero/>
-          <GlobalBrand />
+        <Hero/>
+        <CircularText />
+        <GlobalBrand />
         <AboutUS2 />
         <RecentProducts />
         <ReviewRating/>

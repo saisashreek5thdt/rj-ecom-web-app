@@ -5,7 +5,7 @@ export default function Hero() {
   const hero2 = "/heroine.png";
   return (
     <>
-      <div className="w-full h-screen grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+      <div className="relative  w-full h-screen grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
 
         {/* <div className="absolute z-10 flex flex-col-reverse gap-2 pl-5 ">
           <p>Instagram</p>
