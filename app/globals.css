@@ -77,3 +77,13 @@
   animation: slide-in-right 2.5s ease-out forwards;
   will-change: transform, opacity;
 }
+
+.mySwiper .swiper-pagination-bullet {
+  background-color: white;
+  opacity: 0.8;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: white;
+  opacity: 1;
+}
