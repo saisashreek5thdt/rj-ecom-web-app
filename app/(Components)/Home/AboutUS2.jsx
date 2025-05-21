@@ -11,7 +11,7 @@ export default function AboutUS2() {
       setIsMobile(window.innerWidth < 768);
     };
 
-    handleResize(); // initial value
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -22,12 +22,12 @@ export default function AboutUS2() {
   const fabricTexture = "/section-bg.jpg";
 
   return (
-    <section className="w-full mt-20 overflow-hidden h-screen">
+    <section className="w-full mt-20 overflow-hidden min-h-screen md:h-screen">
       <div className="w-full flex flex-col md:flex-row min-h-[600px]">
         {/* Left image */}
-        <div className="w-1/3 sm:w-1/2 lg:w-[30%] md:w-2/5 relative h-64 md:h-auto">
+        <div className="w-full md:w-2/5 relative h-64 md:h-auto">
           <div
-            className="absolute inset-0 bg-cover bg-center w-[100%]"
+            className="absolute inset-0 bg-cover bg-center w-full h-full"
             style={{
               backgroundImage: `url(${businessManImage})`,
               backgroundPosition: "center 20%",
@@ -35,94 +35,89 @@ export default function AboutUS2() {
           />
         </div>
 
-        {/* Right side with background and overlay */}
-        <div className="w-2/3 sm:w-1/2 lg:w-[70%] md:w-3/5 relative">
-          {/* Fabric texture background */}
+        {/* Right side */}
+        <div className="w-full md:w-3/5 relative">
+          {/* Background */}
           <div
             className="absolute inset-0 bg-cover bg-center z-0 opacity-40"
             style={{ backgroundImage: `url(${fabricTexture})` }}
           />
-          {/* Dark overlay */}
-          <div className="absolute inset-0 bg-opacity-50 z-10" />
+          <div className="absolute inset-0 bg-black/10 z-10" />
 
-          {/* Main content */}
-          <div className="relative z-20  text-white w-full h-full flex items-center">
-            <div className="grid grid-cols-1 md:grid-rows-2 w-3/5 px-10">
-              {/* Title */}
-              <div className="flex flex-col justify-center items-start mb-4 gap-3">
-                <p className="text-lg pl-10 -pt-20 uppercase tracking-widest text-gray-3002">
+          {/* Content */}
+          <div className="relative z-20 text-white w-full h-full flex flex-col md:flex-row items-center px-4 py-10 md:py-0">
+            {/* Text content */}
+            <div className="w-full md:w-3/5 px-2 sm:px-6 md:px-10 space-y-6">
+              <div className="flex flex-col justify-center items-start gap-3">
+                <p className="text-sm uppercase tracking-widest text-gray-300">
                   COOL LOOK
                 </p>
-                <h2 className="px-10 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
                   We comprehend your style needs and create{" "}
                   <span className="text-[#b2996e]">wonderful clothing</span>
                 </h2>
               </div>
+
               {/* Stats */}
-              <div className="grid grid-cols-2 md:grid-cols-2  px-10 place-content-center ">
+              <div className="grid grid-cols-2 sm:grid-cols-2 gap-0">
                 {[
-                  { value: "19+", label: "Tailors" },
+                  { value: "19+", label: "Tailors", highlight: true },
                   { value: "08k", label: "Reviews" },
                   { value: "16k", label: "Bookings" },
-                  { value: "192+", label: "Clients" },
+                  { value: "192+", label: "Clients", highlight: true },
                 ].map((stat, idx) => (
                   <div
                     key={idx}
-                    className={` p-10 flex flex-col items-center justify-center ${
-                      idx === 0 || idx === 3 ? "bg-black opacity-60" : ""}`}
+                    className={`group transition-colors duration-300 cursor-pointer flex flex-col items-center justify-center text-center py-6 px-4 
+        ${stat.highlight ? "bg-[rgba(255,255,255,0.1)]" : ""}
+      `}
                   >
-                    <p className=" text-[50px] text-[#b2996e] font-semibold mb-1">
+                    <p className="text-[32px] sm:text-[40px] text-[#b2996e] group-hover:text-white font-medium mb-1 transition-colors duration-300">
                       {stat.value}
                     </p>
-                    <p className="font-normal text-base uppercase leading-2 tracking-[3px] text-gray-200">
+                    <p className="font-normal text-sm sm:text-base uppercase tracking-[2px] text-gray-200 group-hover:text-white transition-colors duration-300">
                       {stat.label}
                     </p>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-rows-2 w-2/5 gap-5">
-              {/* Floating card (description + CTA) */}
-              <div className="pt-16 text-gray-200">
-                <p className="text-base">
-                  Nulla pellentesque dignissim enim sit amet venenatis urna.
-                  Laoreet non curabitur gravida arcu ac tortor dignissim
-                  convallis Et aenean.netus et malesuada fames enim diam.
-                </p>
-              </div>
-              {/* Button + avatars */}
-              <div className="flex items-start flex-col gap-5">
-                <Button text={`Shop The Sales`} />
-                <img
+
+            {/* Right column content */}
+            <div className="w-full md:w-2/5 px-2 sm:px-6 md:px-10 space-y-5 mt-10 md:mt-0">
+              <p className="text-base text-gray-200">
+                Nulla pellentesque dignissim enim sit amet venenatis urna.
+                Laoreet non curabitur gravida arcu ac tortor dignissim convallis
+                Et aenean.netus et malesuada fames enim diam.
+              </p>
+
+              {/* Button + Avatar */}
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                <div className="w-full sm:w-auto">
+                  <Button text="Shop The Sales" className="w-full sm:w-auto" />
+                </div>
+                <Image
                   src={avatarCircles}
                   alt="Client avatars"
-                  className="h-20 w-auto"
+                  width={100}
+                  height={40}
+                  className="w-16 sm:w-24 h-auto"
                 />
               </div>
-              <img
-                  src={businessWomanImage}
-                  alt="Client avatars"
-                  className="object-cover mt-4 w-full h-full sm:h-96 mb-5"
-                />
-              {/* <Image
-                src="/blog.jpg"
-                alt="image"
-                width={460}
-                height={230}
-                className=""
-              /> */}
-              {/* <div className="object-cover mt-4 w-full h-full sm:h-96 mb-5" style={{ backgroundImage: `url(${businessWomanImage})` }} ></div> */}
+
+              {/* Full width image */}
+              <Image
+                src={businessWomanImage}
+                alt="Business woman"
+                width={1200}
+                height={600}
+                className="object-cover w-full h-80 sm:h-72"
+                priority
+              />
+            </div>
           </div>
-          </div>
-          
         </div>
       </div>
-
-      {/* Mobile-only bottom image */}
-      <div
-        className="w-full md:hidden h-64 bg-cover bg-center"
-        style={{ backgroundImage: `url(${businessWomanImage})` }}
-      />
     </section>
   );
 }
