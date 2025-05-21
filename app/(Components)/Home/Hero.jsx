@@ -14,7 +14,7 @@ export default function Hero() {
           <p>Linkedin</p>
         </div> */}
 
-        <div className="absolute z-10 flex flex-col gap-2 sm:pl-0 md:pl-3 lg:pl-5 xl:pl-5 bottom-0">
+        <div className="absolute z-10 flex mb-16 flex-col gap-2 sm:pl-0 md:pl-3 lg:pl-5 xl:pl-5 bottom-0">
           <div className="flex flex-col items-center justify-end h-24">
             <p className="text-base font-medium rotate-270 transform origin-center">Instagram</p>
           </div>
@@ -25,7 +25,7 @@ export default function Hero() {
             <p className="text-base font-medium rotate-270 transform origin-center">Twitter</p>
           </div>
           <div className="flex flex-col items-center justify-end h-24">
-            <p className="text-base font-medium rotate-270 transform origin-center">LinkedIn</p>
+            <p className="text-base font-medium rotate-270 transform origin-center">Youtube</p>
           </div>
         </div>
         {/* Left Side */}
