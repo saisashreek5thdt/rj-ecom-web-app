@@ -7,42 +7,42 @@ export default function RecentProducts() {
   const products = [
     {
       id: 1,
-      name: "Double Breasted Blazer",
+      name: "",
       price: "Price on Request",
       primaryImage: "/recent1.jpg",
       secondaryImage: "/recent1hover.jpg", // Replace with actual hover image
     },
     {
       id: 2,
-      name: "Retro Style Blazer",
+      name: "",
       price: "Price on Request",
       primaryImage: "/recent2.jpg",
       secondaryImage: "/recent2hover.jpg",  // Replace with actual hover image
     },
     {
       id: 3,
-      name: "Formal Suit Jacket",
+      name: "",
       price: "Price on Request",
       primaryImage: "/recent3.jpg",
       secondaryImage: "/recent3hover.jpg", // Replace with actual hover image
     },
     {
       id: 4,
-      name: "Casual Blazer",
+      name: "",
       price: "Price on Request",
       primaryImage: "/recent1.jpg",
       secondaryImage: "/recent1hover.jpg", // Replace with actual hover image
     },
     {
       id: 5,
-      name: "Tuxedo Jacket",
+      name: "",
       price: "Price on Request",
       primaryImage: "/recent2.jpg",
       secondaryImage: "/recent2hover.jpg", // Replace with actual hover image
     },
     {
       id: 6,
-      name: "Lapel Blazer",
+      name: "",
       price: "Price on Request",
       primaryImage: "/recent3.jpg",
       secondaryImage: "/recent3hover.jpg", // Replace with actual hover image
