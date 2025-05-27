@@ -20,7 +20,7 @@ export default function Home() {
         <GlobalBrand />
         <AboutUS2 />
         <RecentProducts />
-        <ReviewRating/>
+        {/* <ReviewRating/> */}
         {/* <ReviewsAndRatings /> */}
         {/* <ShippingInfo /> */}
         <InstagramZoomIn/>
