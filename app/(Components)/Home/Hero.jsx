@@ -1,12 +1,11 @@
 import Image from "next/image";
 
 export default function Hero() {
-  const hero1 = "/heroo.png";
-  const hero2 = "/heroine.png";
+  const hero1 = "/hero/hero-1.png";
+  const hero2 = "/hero/hero-2.png";
   return (
     <>
       <div className="relative  w-full h-screen grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-
         {/* <div className="absolute z-10 flex flex-col-reverse gap-2 pl-5 ">
           <p>Instagram</p>
           <p>Facebook</p>
@@ -16,16 +15,24 @@ export default function Hero() {
 
         <div className="absolute z-10 flex mb-16 flex-col gap-2 sm:pl-0 md:pl-3 lg:pl-5 xl:pl-5 bottom-0">
           <div className="flex flex-col items-center justify-end h-24">
-            <p className="text-base font-medium rotate-270 transform origin-center">Instagram</p>
+            <p className="text-base font-medium rotate-270 transform origin-center">
+              Instagram
+            </p>
           </div>
           <div className="flex flex-col items-center justify-end h-24">
-            <p className="text-base font-medium rotate-270 transform origin-center">Facebook</p>
+            <p className="text-base font-medium rotate-270 transform origin-center">
+              Facebook
+            </p>
           </div>
           <div className="flex flex-col items-center justify-end h-24">
-            <p className="text-base font-medium rotate-270 transform origin-center">Twitter</p>
+            <p className="text-base font-medium rotate-270 transform origin-center">
+              Twitter
+            </p>
           </div>
           <div className="flex flex-col items-center justify-end h-24">
-            <p className="text-base font-medium rotate-270 transform origin-center">Youtube</p>
+            <p className="text-base font-medium rotate-270 transform origin-center">
+              Youtube
+            </p>
           </div>
         </div>
         {/* Left Side */}

@@ -9,27 +9,27 @@ import "swiper/css/pagination";
 
 const images = [
   {
-    src: "/hero1.jpg",
-    alt: "Image 1",
-    content: "Dolor sit amet consectetur adipiscing. Cras fermentum odio eu feugiat pretium.",
+    src: "/social_insta/hero1.jpg",
+    alt: "/social_instaImage 1",
+    content: "",
     date: "August 04, 2022",
   },
   {
-    src: "/hero2.jpg",
+    src: "/social_insta/hero2.jpg",
     alt: "Image 2",
-    content: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+    content: "",
     date: "September 15, 2023",
   },
   {
-    src: "/hero5.jpg",
+    src: "/social_insta/hero5.jpg",
     alt: "Image 3",
-    content: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    content: "",
     date: "July 20, 2021",
   },
   {
-    src: "/hero6.jpg",
+    src: "/social_insta/hero6.jpg",
     alt: "Image 4",
-    content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    content: "",
     date: "October 08, 2020",
   },
 ];
@@ -72,7 +72,10 @@ export default function InstagramZoomIn() {
       {/* Desktop Grid */}
       <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full">
         {images.map((img, index) => (
-          <div key={index} className="aspect-square overflow-hidden group relative cursor-pointer">
+          <div
+            key={index}
+            className="aspect-square overflow-hidden group relative cursor-pointer"
+          >
             <Image
               src={img.src}
               alt={img.alt}
@@ -83,9 +86,11 @@ export default function InstagramZoomIn() {
             <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-around">
               <p className="text-sm text-white text-center">{img.content}</p>
               <p className=" text-4xl">
-                <FaInstagram/>
+                <FaInstagram />
               </p>
-              <p className="text-xs mt-2 text-gray-300  text-center">{img.date}</p>
+              <p className="text-xs mt-2 text-gray-300  text-center">
+                {img.date}
+              </p>
             </div>
           </div>
         ))}

@@ -16,10 +16,10 @@ export default function AboutUS2() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const businessManImage = "/aboutIMG2.jpg";
-  const businessWomanImage = "/blog.jpg";
-  const avatarCircles = "/rating-image-1a-300x113.webp";
-  const fabricTexture = "/section-bg.jpg";
+  const businessManImage = "/about/aboutIMG2.jpg";
+  const businessWomanImage = "/about/blog.jpg";
+  const avatarCircles = "/about/rating-image-1a-300x113.webp";
+  const fabricTexture = "/about/section-bg.jpg";
 
   return (
     <section className="w-full mt-20 overflow-hidden min-h-screen md:h-screen">
